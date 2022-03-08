@@ -1,0 +1,268 @@
+<div class="md:flex w-screen bg-slate-300 md:h-screen">
+  <div class="block md:flex flex-col w-full md:w-1/5 bg-sky-800 dark:bg-black">
+    <div
+      class="flex w-full border-b-2 border-white md:h-20 justify-center items-center"
+    >
+      <div class="flex md:h-3/4 w-5/6 justify-between items-center text-white">
+        <span> 🇪Elite Able </span>
+        <span>☷</span>
+      </div>
+    </div>
+    <div class="hidden md:block overflow-auto no-scrollbar">
+      <div
+        class="md:h-12 w-full text-slate-300 flex justify-start font-bold text-center items-center pl-4 text-sm"
+      >
+        Navigation
+      </div>
+      <div class="flex flex-col bg-sky-900 dark:bg-slate-800">
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4 font-bold"
+        >
+          <span>Dashboard</span> <span>^ </span>
+        </div>
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-white flex justify-start pl-10 text-center items-center bg-sky-400"
+        >
+          Analytics
+        </div>
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-white flex justify-start pl-10 text-center items-center"
+        >
+          Sales
+        </div>
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-white flex justify-start pl-10 text-center items-center"
+        >
+          Crypto
+        </div>
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-white flex justify-start pl-10 text-center items-center"
+        >
+          Project
+        </div>
+        <div
+          class="h-12 w-full border-b-2 border-y-cyan-600 text-white flex justify-start pl-10 text-center items-center"
+        >
+          Helpdesk
+        </div>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Page Layouts</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Widget</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full text-slate-300 flex justify-start font-bold text-center items-center pl-4 text-sm"
+      >
+        UI Elements
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Basic</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Advance</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Extra</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Animation</span> <span>> </span>
+      </div>
+      <div
+        class="h-12 w-full border-b-2 border-y-cyan-600 text-slate-300 flex justify-between text-start items-center pl-4 pr-4"
+      >
+        <span>Options</span> <span>> </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col w-full bg-slate-300 dark:bg-black md:h-screen">
+    <div
+      class="md:flex w-full bg-white dark:bg-slate-800 md:h-20 justify-between items-center pl-4 pr-4"
+    >
+      <div>
+        <div
+          class="italic font-bold flex justify-center md:block dark:text-white"
+        >
+          Home
+        </div>
+        <div class="italic flex justify-center md:block dark:text-slate-300">
+          🏠 / Analytics Dashboard
+        </div>
+      </div>
+      <div class="flex justify-between md:block md:justify-start">
+        <span class="md:pl-4 md:pr-4">🔍</span>
+        <span class="md:pl-4 md:pr-4">🔔</span>
+        <span class="md:pl-4 md:pr-4">📨</span>
+        <span class="md:pl-4 md:pr-4">⚙️</span>
+        <span
+          id="dark-mode-toggle"
+          class="cursor-pointer md:pl-4 md:pr-4"
+          (click)="toggleDarkMode()"
+          *ngIf="darkModeEnabled$ | async; else elseBlock"
+          >🌞</span
+        >
+        <ng-template #elseBlock
+          ><span
+            class="cursor-pointer md:pl-4 md:pr-4"
+            id="dark-mode-toggle"
+            (click)="toggleDarkMode()"
+            >🌚</span
+          ></ng-template
+        >
+      </div>
+    </div>
+    <div
+      class="flex flex-col md:flex-row w-full md:h-2/5 p-2 md:p-8 items-center md:items-start"
+    >
+      <div
+        class="flex flex-wrap flex-row w-full md:w-1/3 h-full bg-white dark:bg-slate-800 m-4"
+      >
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">👁️</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white dark:text-white">10K</div>
+            <div class="text-slate-500">Visitors</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">🎵</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">10%</div>
+            <div class="text-slate-500">Volume</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">📁</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">2000+</div>
+            <div class="text-slate-500">Files</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">📩</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">120</div>
+            <div class="text-slate-500">Mails</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap flex-row w-full md:w-1/3 h-full bg-white dark:bg-slate-800 m-4"
+      >
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">⤵️</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">1000</div>
+            <div class="text-slate-500">Shares</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">📶</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">600</div>
+            <div class="text-slate-500">Network</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">🔁</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">3550</div>
+            <div class="text-slate-500">Returns</div>
+          </div>
+        </div>
+        <div
+          class="flex justify-evenly items-center w-1/2 border-2 border-r-gray-100 dark:border-0 md:h-1/2"
+        >
+          <div class="text-3xl">🛒</div>
+          <div class="flex flex-col items-center">
+            <div class="font-bold dark:text-white">100%</div>
+            <div class="text-slate-500">Order</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between flex-wrap flex-row md:w-1/3 h-full m-4">
+        <div
+          class="flex flex-col justify-between bg-sky-400 w-1/2 text-white h-full border-r-8 border-slate-300 dark:border-black p-4"
+        >
+          <span class="text-xs clamp">AVERAGE SUPPORT REQUESTS</span>
+          <div class="flex flex-col">
+            <span>20</span>
+            <span>SOLVE: 15</span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between bg-green-500 w-1/2 text-white h-full border-r-8 border-slate-300 dark:border-black p-4"
+        >
+          <span class="text-xs clamp">QUICK AGENT RESPONSE</span>
+          <div class="flex flex-col">
+            <span>30 MIN</span>
+            <span>REMAIN: 3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row md:h-3/5 w-full p-2 items-center">
+      <div
+        class="flex flex-col w-full md:w-4/6 h-full bg-white dark:bg-slate-800 p-2 m-2"
+      >
+        <div class="flex flex-col md:h-1/2 w-full">
+          <h1 class="text-cyan-500 text-xl">
+            Department wise annual recurring and profit
+          </h1>
+          <div class="md:flex h-full w-full">
+            <div class="w-full md:w-1/3">
+              <p class="text-3xl font-semibold m-1 dark:text-white">$687,578</p>
+              <p class="m-1 dark:text-white">⬇️Marketing Growth</p>
+              <p class="m-1 text-slate-500">
+                Measure how fast you're growing in current market. Learn more
+              </p>
+            </div>
+            <div class="w-full md:w-1/3">
+              <p class="text-3xl font-semibold m-1 dark:text-white">$687,578</p>
+              <p class="m-1 dark:text-white">↗️Marketing Growth</p>
+              <p class="m-1 text-slate-500">
+                Measure how fast you're growing in current market. Learn more
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex md:h-1/2 w-full">
+          <img src="../assets/graph1.png" />
+        </div>
+      </div>
+      <div
+        class="flex flex-col w-full md:w-2/6 h-full bg-white dark:bg-slate-800 p-3 dark:text-white"
+      >
+        <h1>Users by time of day [current 1236]</h1>
+        <img src="../assets/graph2.png" />
+      </div>
+    </div>
+  </div>
+</div>
